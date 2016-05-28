@@ -13,10 +13,12 @@ namespace Final_Project_GUI
     public partial class SystemAdminGUI : Form
     {
         OpenFileDialog ofd = new OpenFileDialog();
+        private Login log = new Login();
 
         public SystemAdminGUI()
         {
             InitializeComponent();
+            
         }
 
   
@@ -36,7 +38,8 @@ namespace Final_Project_GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            log.Show();
         }
     }
 }

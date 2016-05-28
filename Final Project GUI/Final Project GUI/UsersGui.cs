@@ -12,12 +12,13 @@ using System.Windows.Forms;
 namespace Final_Project_GUI
 {
     
-    public partial class Form1 : Form
+    public partial class UsersGui : Form
     {
+        private Login log = new Login();
         string fullPath;
         string justFileName;
         OpenFileDialog ofd = new OpenFileDialog();
-        public Form1()
+        public UsersGui()
         {
             InitializeComponent();
             
@@ -58,7 +59,7 @@ namespace Final_Project_GUI
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (label1.BackColor == Color.Red)
-                label1.BackColor = Form1.DefaultBackColor;
+                label1.BackColor = UsersGui.DefaultBackColor;
             else
                 label1.BackColor = Color.Red;
 
@@ -66,7 +67,8 @@ namespace Final_Project_GUI
 
         private void LogoutButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            log.Show();
         }
 
         

@@ -1,6 +1,6 @@
 ﻿namespace Final_Project_GUI
 {
-    partial class Form1
+    partial class UsersGui
     {
         /// <summary>
         /// Required designer variable.
