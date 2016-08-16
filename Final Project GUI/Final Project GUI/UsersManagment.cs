@@ -26,14 +26,12 @@ namespace Final_Project_GUI
             {
                 MessageBox.Show("User " +popup.UsernameTextBox.Text +" added to database");
             }
-            listBox1.Items.Add(popup.UsernameTextBox.Text);
-            popup.Dispose();
+            
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items != null)
-            {
+            
                 DialogResult result = MessageBox.Show("Are you sure?",
                 "Important Question",
                 MessageBoxButtons.YesNo);
@@ -45,11 +43,6 @@ namespace Final_Project_GUI
                             break;
                         }
                 }
-            }
-            else
-            {
-                DeleteButton.Enabled = false;
-            }
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
@@ -59,6 +52,26 @@ namespace Final_Project_GUI
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void UsersManagment_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.Login' table. You can move, or remove it, as needed.
+            this.loginTableAdapter.Fill(this.dataDataSet.Login);
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.loginTableAdapter.FillBy(this.dataDataSet.Login);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

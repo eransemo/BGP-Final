@@ -28,18 +28,15 @@ namespace Final_Project_GUI
         {
             if (fullPath != null)
             {
-                ProcessStartInfo psi = new ProcessStartInfo("CMD");
+                String sub = justFileName.Substring(0, justFileName.Length - 2);
+                String strCmdtxt = "/c cd tcc && tcc " + fullPath + " && " + sub + ".exe && exit";
+                ProcessStartInfo psi = new ProcessStartInfo("CMD", strCmdtxt);
+
                 psi.UseShellExecute = false;
                 psi.RedirectStandardOutput = true;
                 psi.CreateNoWindow = true;
-                psi.RedirectStandardInput = true;
                 var proc = Process.Start(psi);
 
-                proc.StandardInput.WriteLine(@"cd C:\TC\bin");
-                proc.StandardInput.WriteLine("tcc " + fullPath);
-                string sub = justFileName.Substring(0, justFileName.Length - 2);
-                proc.StandardInput.WriteLine(sub+".exe");
-                proc.StandardInput.WriteLine("exit"); 
                 String b = proc.StandardOutput.ReadToEnd();
                 textBox1.Text = b;
             }
@@ -71,9 +68,12 @@ namespace Final_Project_GUI
             log.Show();
         }
 
-        
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void openToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ofd.Filter = "C|*.c";
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -84,11 +84,6 @@ namespace Final_Project_GUI
             }
             else
                 this.fullPath = null;
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

@@ -26,3 +26,19 @@ C:\Users\erans\documents\visual studio 2012\Projects\Final Project GUI\Final Pro
 \\Mac\Home\Documents\Visual Studio 2012\Projects\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.TopologyManagment.resources
 \\Mac\Home\Documents\Visual Studio 2012\Projects\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.UsersManagment.resources
 \\Mac\Home\Documents\Visual Studio 2012\Projects\Final Project GUI\Final Project GUI\obj\Debug\Final Project GUI.csproj.GenerateResource.Cache
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\bin\Debug\Final Project GUI.exe.config
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final Project GUI.exe
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final Project GUI.pdb
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\bin\Debug\Final Project GUI.exe
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\bin\Debug\Final Project GUI.pdb
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final Project GUI.csprojResolveAssemblyReference.cache
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.Login.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.PopupFormUser.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.Properties.Resources.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.SystemAdminGUI.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.TopologyManagment.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.UsersManagment.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final Project GUI.csproj.GenerateResource.Cache
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\obj\Debug\Final_Project_GUI.UsersGui.resources
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\bin\Debug\Data.mdf
+C:\Users\erans\Source\Repos\BGP-Final\Final Project GUI\Final Project GUI\bin\Debug\Data_log.ldf
